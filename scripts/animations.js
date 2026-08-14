@@ -163,6 +163,56 @@
     scrollTrigger: { trigger: '.testimonial-grid', start: 'top 78%', once: true }
   });
 
+  /* ---------- TRUST ---------- */
+  gsap.from('.trust-head > *', {
+    y: 26,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.12,
+    ease: EASE,
+    scrollTrigger: { trigger: '.trust', start: 'top 78%', once: true }
+  });
+
+  gsap.from('.trust-stats li', {
+    y: 26,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.1,
+    ease: EASE,
+    clearProps: 'transform,opacity',
+    scrollTrigger: { trigger: '.trust-stats', start: 'top 85%', once: true }
+  });
+
+  gsap.from('.trust-mark', {
+    y: 18,
+    opacity: 0,
+    duration: 0.6,
+    stagger: 0.1,
+    ease: EASE,
+    clearProps: 'transform,opacity',
+    scrollTrigger: { trigger: '.trust-marks', start: 'top 90%', once: true }
+  });
+
+  /* ---------- FAQ ---------- */
+  gsap.from('.faq-head > *', {
+    y: 28,
+    opacity: 0,
+    duration: 0.85,
+    stagger: 0.12,
+    ease: EASE,
+    scrollTrigger: { trigger: '.faq', start: 'top 76%', once: true }
+  });
+
+  gsap.from('.faq-item', {
+    y: 34,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.09,
+    ease: EASE,
+    clearProps: 'transform,opacity',
+    scrollTrigger: { trigger: '.faq-list', start: 'top 82%', once: true }
+  });
+
   /* ---------- STAY & CTA ---------- */
   gsap.from('.stay-figure', {
     x: -46,

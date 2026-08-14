@@ -10,6 +10,72 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles/site.css">
+
+<!-- FAQPage structured data — must stay in sync with the FAQ section markup. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Ayurveda and how does it approach wellbeing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ayurveda takes a holistic view of wellbeing, considering the individual as a whole. It looks at lifestyle, routines, nourishment and individual needs to encourage greater balance in everyday life."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which wellness experience is right for me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each person’s needs are different. Our practitioners can help you understand the therapies and wellness experiences that may be appropriate for you based on your individual needs and preferences."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can I expect during my first visit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your experience begins with an understanding of your needs. Depending on the service you choose, a practitioner may discuss your lifestyle and concerns before recommending a suitable wellness approach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are the therapies personalised?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We believe wellbeing is personal. Our approach takes into consideration your individual needs, preferences and wellness goals when guiding you towards suitable experiences."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to prepare anything before my appointment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Preparation can vary depending on the therapy or wellness programme you choose. Our team will guide you on anything you need to know before your visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I choose between Ayurveda, Panchakarma, Osteopathy and Relaxation Therapies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The right experience depends on what you are looking for. Our team can help you explore the different options and understand which may be best suited to your needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I speak to someone before booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. You can connect with our team to understand our therapies, ask questions and find an experience that feels right for you."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -48,6 +114,7 @@
         <li><a href="#heal">Heal</a></li>
         <li><a href="#stay">Stay</a></li>
         <li><a href="#story">Our Story</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
       <a class="nature-button nav-cta" href="#enquire" data-open-enquiry>Enquire Now</a>
     </nav>
@@ -77,14 +144,14 @@
         <p>Personalised Ayurveda, yoga and restorative therapies in serene natural surroundings.</p>
         <div class="hero-actions">
           <a class="nature-button hero-button hero-button--primary" href="#enquire" data-open-enquiry>
-            Book a Free Consultation
+            Book a Consultation
             <svg class="btn-leaf" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M7 25c8-5 12-11 17-20c2 9-2 17-10 20M12 20c-2-5-1-10 2-14c3 5 3 9 1 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a class="nature-button hero-button hero-button--ghost" href="#heal">
             Explore Wellness Programs
           </a>
         </div>
-        <p class="hero-reassure">Free 15-minute call with an Ayurvedic doctor · No obligation</p>
+        <p class="hero-reassure">A 15-minute call with an Ayurvedic doctor · No obligation</p>
       </div>
     </div>
   </section>
@@ -104,11 +171,11 @@
         </g>
       </svg>
 
-      <h2 class="intro-title">A Holistic Path to Wellbeing</h2>
+      <h2 class="intro-title">Ayurveda, A Way of Living Well</h2>
 
       <svg class="seed-rule" viewBox="0 0 190 120" fill="none" aria-hidden="true"><g fill="#B49A65" opacity=".8"><ellipse cx="45" cy="65" rx="8" ry="18" transform="rotate(-34 45 65)"/><ellipse cx="82" cy="35" rx="7" ry="16" transform="rotate(16 82 35)"/><ellipse cx="116" cy="69" rx="8" ry="18" transform="rotate(42 116 69)"/><ellipse cx="150" cy="42" rx="6" ry="14" transform="rotate(-12 150 42)"/></g></svg>
 
-      <p class="intro-text">At Sri Sri Wellbeing, we blend ancient wisdom with personalised care to support your body, mind and spirit in a serene natural environment.</p>
+      <p class="intro-text">Ayurveda looks at wellbeing as a whole. It considers the way your body, mind, daily routines and surroundings come together, and encourages you to listen to what your body needs. By bringing greater balance into everyday life, Ayurveda offers a thoughtful approach to caring for yourself. At Sri Sri Wellbeing, this wisdom comes together with modern wellness practices to create personalized experiences that help you slow down, reconnect with yourself and make space for your wellbeing.</p>
     </div>
   </section>
 
@@ -119,13 +186,44 @@
 
         <li class="nature-card treatment-card">
           <picture>
+            <source srcset="images/webp/treatment-ayurveda-therapies.webp" type="image/webp">
+            <img src="images/png/treatment-ayurveda-therapies.png" alt="Herbal poultice bundles, brass bowls and a lit candle arranged for an Ayurvedic therapy" loading="lazy" decoding="async">
+          </picture>
+          <div class="card-body">
+            <h3>Ayurveda</h3>
+            <span class="card-rule" aria-hidden="true"></span>
+            <p class="card-tagline">Wellbeing considered as a whole.</p>
+            <p>A holistic view of your lifestyle, routines, nourishment and individual needs, encouraging greater balance in everyday life.</p>
+            <a class="card-link" href="#enquire" data-open-enquiry data-programme="Ayurveda">Enquire about Ayurveda<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <svg class="card-motif" viewBox="0 0 240 320" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M43 294C83 231 96 164 115 35"/><path d="M95 184C70 178 52 164 38 143C66 139 88 149 101 167"/><path d="M104 145C129 134 148 114 156 90C131 92 112 105 108 128"/><path d="M83 222C59 220 37 209 20 188C49 184 73 194 89 210"/></g></svg>
+          </div>
+        </li>
+
+        <li class="nature-card treatment-card">
+          <picture>
+            <source srcset="images/webp/treatment-eye-care.webp" type="image/webp">
+            <img src="images/png/treatment-eye-care.png" alt="A brass bowl of water holding a white blossom on a wooden table in a garden" loading="lazy" decoding="async">
+          </picture>
+          <div class="card-body">
+            <h3>Osteopathy</h3>
+            <span class="card-rule" aria-hidden="true"></span>
+            <p class="card-tagline">Care that begins with understanding your body.</p>
+            <p>A hands-on approach focused on the body’s structure, movement and alignment. At Sri Sri Wellbeing, each session is personalised to help you experience greater ease and awareness in your body.</p>
+            <a class="card-link" href="#enquire" data-open-enquiry data-programme="Osteopathy">Enquire about Osteopathy<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <svg class="card-motif card-motif--ripple" viewBox="0 0 320 180" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="5"><ellipse cx="160" cy="105" rx="126" ry="44"/><ellipse cx="160" cy="105" rx="88" ry="30"/><ellipse cx="160" cy="105" rx="48" ry="16"/><path d="M160 70c-13-15-13-26 0-43c13 17 13 28 0 43Z"/></g></svg>
+          </div>
+        </li>
+
+        <li class="nature-card treatment-card">
+          <picture>
             <source srcset="images/webp/treatment-panchakarma.webp" type="image/webp">
             <img src="images/png/treatment-panchakarma.png" alt="Warm herbal oil poured on a guest's forehead during a shirodhara treatment" loading="lazy" decoding="async">
           </picture>
           <div class="card-body">
             <h3>Panchakarma</h3>
             <span class="card-rule" aria-hidden="true"></span>
-            <p>Deep detoxification and cleansing therapies.</p>
+            <p class="card-tagline">A traditional Ayurvedic experience, personalised to you.</p>
+            <p>Rooted in Ayurveda, Panchakarma brings together a personalized sequence of traditional therapies. Guided by experienced practitioners, it offers a considered approach to restoring balance and nurturing overall wellbeing.</p>
             <a class="card-link" href="#enquire" data-open-enquiry data-programme="Panchakarma">Enquire about Panchakarma<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             <svg class="card-motif" viewBox="0 0 240 320" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M43 294C83 231 96 164 115 35"/><path d="M95 184C70 178 52 164 38 143C66 139 88 149 101 167"/><path d="M104 145C129 134 148 114 156 90C131 92 112 105 108 128"/><path d="M83 222C59 220 37 209 20 188C49 184 73 194 89 210"/></g></svg>
           </div>
@@ -133,29 +231,16 @@
 
         <li class="nature-card treatment-card">
           <picture>
-            <source srcset="images/webp/treatment-ayurveda-therapies.webp" type="image/webp">
-            <img src="images/png/treatment-ayurveda-therapies.png" alt="Herbal poultice bundles, brass bowls and a lit candle arranged for an Ayurvedic therapy" loading="lazy" decoding="async">
+            <source srcset="images/webp/nature-stay-cottage.webp" type="image/webp">
+            <img src="images/png/nature-stay-cottage.png" alt="A quiet garden cottage surrounded by trees, a place to rest and slow down" loading="lazy" decoding="async">
           </picture>
           <div class="card-body">
-            <h3>Ayurveda Therapies</h3>
+            <h3>Relaxation Therapies</h3>
             <span class="card-rule" aria-hidden="true"></span>
-            <p>Rejuvenating massages and specialised therapies.</p>
-            <a class="card-link" href="#enquire" data-open-enquiry data-programme="Ayurveda Therapies">Enquire about Ayurveda Therapies<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <svg class="card-motif" viewBox="0 0 240 320" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M43 294C83 231 96 164 115 35"/><path d="M95 184C70 178 52 164 38 143C66 139 88 149 101 167"/><path d="M104 145C129 134 148 114 156 90C131 92 112 105 108 128"/><path d="M112 103C134 91 149 72 154 51C132 53 116 65 111 85"/></g></svg>
-          </div>
-        </li>
-
-        <li class="nature-card treatment-card">
-          <picture>
-            <source srcset="images/webp/treatment-eye-care.webp" type="image/webp">
-            <img src="images/png/treatment-eye-care.png" alt="Brass bowl of water holding a white blossom on a wooden table in a garden" loading="lazy" decoding="async">
-          </picture>
-          <div class="card-body">
-            <h3>Eye Care</h3>
-            <span class="card-rule" aria-hidden="true"></span>
-            <p>Traditional therapies for healthy eyes and clear vision.</p>
-            <a class="card-link" href="#enquire" data-open-enquiry data-programme="Eye Care">Enquire about Eye Care<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <svg class="card-motif card-motif--ripple" viewBox="0 0 320 180" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="5"><ellipse cx="160" cy="105" rx="126" ry="44"/><ellipse cx="160" cy="105" rx="88" ry="30"/><ellipse cx="160" cy="105" rx="48" ry="16"/><path d="M160 70c-13-15-13-26 0-43c13 17 13 28 0 43Z"/></g></svg>
+            <p class="card-tagline">Sometimes, wellbeing begins with simply slowing down.</p>
+            <p>From Ayurvedic massages to calming therapies, each experience is designed to help you step away from everyday pace and make time for rest, relaxation and yourself.</p>
+            <a class="card-link" href="#enquire" data-open-enquiry data-programme="Relaxation Therapies">Enquire about Relaxation Therapies<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <svg class="card-motif" viewBox="0 0 240 320" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M43 294C83 231 96 164 115 35"/><path d="M95 184C70 178 52 164 38 143C66 139 88 149 101 167"/><path d="M104 145C129 134 148 114 156 90C131 92 112 105 108 128"/><path d="M83 222C59 220 37 209 20 188C49 184 73 194 89 210"/></g></svg>
           </div>
         </li>
 
@@ -294,6 +379,161 @@
     </div>
   </section>
 
+  <!-- ================= TRUST =================
+       NOTE: the social footprint numbers and accreditation logos below are
+       PLACEHOLDERS pending the real figures and certification marks. -->
+  <section class="trust" aria-labelledby="trust-title">
+    <div class="container">
+      <div class="trust-head">
+        <svg class="leaf-divider" viewBox="0 0 360 44" fill="none" aria-hidden="true">
+          <path d="M0 22h132M228 22h132" stroke="#B86F4E" stroke-width="1.5"/>
+          <g stroke="#6F7F61" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M180 35c-1-13 1-23 8-32"/>
+            <path d="M184 19c-10-1-16-6-19-13c10-1 17 3 20 10"/>
+            <path d="M186 14c8-2 14-7 17-13c-9 0-15 4-18 10"/>
+            <path d="M180 28c-8-1-14-5-17-11c9-1 15 3 18 8"/>
+          </g>
+        </svg>
+        <h2 id="trust-title">Rooted in Trust, Reaching Further</h2>
+        <p class="trust-intro">Our journey is reflected in the people we have served, the recognition we have received and the growing community we continue to reach.</p>
+      </div>
+
+      <ul class="trust-stats">
+        <li>
+          <span class="trust-num" data-count="25000">25,000+</span>
+          <span class="trust-label">Guests welcomed</span>
+        </li>
+        <li>
+          <span class="trust-num" data-count="30">30+</span>
+          <span class="trust-label">Years of practice</span>
+        </li>
+        <li>
+          <span class="trust-num" data-count="40">40+</span>
+          <span class="trust-label">Practitioners</span>
+        </li>
+        <li>
+          <span class="trust-num" data-count="12">12+</span>
+          <span class="trust-label">Countries reached</span>
+        </li>
+      </ul>
+
+      <ul class="trust-marks" aria-label="Accreditations">
+        <li class="trust-mark">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 4l5.3 3.9 6.5-.5 2 6.2 5.4 3.7-2.4 6.1 2.4 6.1-5.4 3.7-2 6.2-6.5-.5L24 44l-5.3-3.9-6.5.5-2-6.2L4.8 30.7 7.2 24.6 4.8 18.5l5.4-3.7 2-6.2 6.5.5L24 4Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M17 24l5 5 9-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Certified Practitioners</span>
+        </li>
+        <li class="trust-mark">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="19" r="13" stroke="currentColor" stroke-width="1.4"/><path d="M17 30l-3 14 10-5 10 5-3-14" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M18 19l4 4 8-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Accredited Wellness Centre</span>
+        </li>
+        <li class="trust-mark">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 6c7 8 11 13 11 20a11 11 0 1 1-22 0c0-7 4-12 11-20Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M24 34c-3.5 0-6-2.5-6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span>Authentic Ayurvedic Care</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= FAQ =================
+       Placed last before the closing CTA: clears final objections at the
+       point of decision. Native <details> so it works without JS. -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <svg class="botanical-accent sprig sprig--faq" viewBox="0 0 240 320" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M43 294C83 231 96 164 115 35"/><path d="M95 184C70 178 52 164 38 143C66 139 88 149 101 167"/><path d="M104 145C129 134 148 114 156 90C131 92 112 105 108 128"/><path d="M83 222C59 220 37 209 20 188C49 184 73 194 89 210"/><path d="M112 103C134 91 149 72 154 51C132 53 116 65 111 85"/></g></svg>
+
+    <div class="container faq-inner">
+      <div class="faq-head">
+        <svg class="leaf-divider" viewBox="0 0 360 44" fill="none" aria-hidden="true">
+          <path d="M0 22h132M228 22h132" stroke="#B86F4E" stroke-width="1.5"/>
+          <g stroke="#6F7F61" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M180 35c-1-13 1-23 8-32"/>
+            <path d="M184 19c-10-1-16-6-19-13c10-1 17 3 20 10"/>
+            <path d="M186 14c8-2 14-7 17-13c-9 0-15 4-18 10"/>
+            <path d="M180 28c-8-1-14-5-17-11c9-1 15 3 18 8"/>
+          </g>
+        </svg>
+        <h2 id="faq-title">Questions,<br>Answered</h2>
+        <p class="faq-intro">Everything guests usually ask before their first stay. If yours isn't here, our team is happy to talk it through.</p>
+        <a class="nature-button faq-cta" href="#enquire" data-open-enquiry>
+          Ask Us Directly
+          <svg class="btn-leaf" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M7 25c8-5 12-11 17-20c2 9-2 17-10 20M12 20c-2-5-1-10 2-14c3 5 3 9 1 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" name="faq" open>
+          <summary>
+            <span class="faq-q">What is Ayurveda and how does it approach wellbeing?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-a">
+            <p>Ayurveda takes a holistic view of wellbeing, considering the individual as a whole. It looks at lifestyle, routines, nourishment and individual needs to encourage greater balance in everyday life.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" name="faq">
+          <summary>
+            <span class="faq-q">Which wellness experience is right for me?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-a">
+            <p>Each person’s needs are different. Our practitioners can help you understand the therapies and wellness experiences that may be appropriate for you based on your individual needs and preferences.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" name="faq">
+          <summary>
+            <span class="faq-q">What can I expect during my first visit?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-a">
+            <p>Your experience begins with an understanding of your needs. Depending on the service you choose, a practitioner may discuss your lifestyle and concerns before recommending a suitable wellness approach.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" name="faq">
+          <summary>
+            <span class="faq-q">Are the therapies personalised?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-a">
+            <p>Yes. We believe wellbeing is personal. Our approach takes into consideration your individual needs, preferences and wellness goals when guiding you towards suitable experiences.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" name="faq">
+          <summary>
+            <span class="faq-q">Do I need to prepare anything before my appointment?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-a">
+            <p>Preparation can vary depending on the therapy or wellness programme you choose. Our team will guide you on anything you need to know before your visit.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" name="faq">
+          <summary>
+            <span class="faq-q">How do I choose between Ayurveda, Panchakarma, Osteopathy and Relaxation Therapies?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-a">
+            <p>The right experience depends on what you are looking for. Our team can help you explore the different options and understand which may be best suited to your needs.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" name="faq">
+          <summary>
+            <span class="faq-q">Can I speak to someone before booking?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-a">
+            <p>Absolutely. You can connect with our team to understand our therapies, ask questions and find an experience that feels right for you.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ================= STAY & ENQUIRE ================= -->
   <section class="stay" id="stay">
     <svg class="botanical-accent ripple-accent ripple-accent--stay" viewBox="0 0 320 180" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="2"><ellipse cx="160" cy="105" rx="126" ry="44"/><ellipse cx="160" cy="105" rx="88" ry="30"/><ellipse cx="160" cy="105" rx="48" ry="16"/></g></svg>
@@ -339,6 +579,7 @@
         <li><a href="#heal">Heal</a></li>
         <li><a href="#stay">Stay</a></li>
         <li><a href="#story">Our Story</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
     <a class="nature-button footer-cta" href="#enquire" data-open-enquiry>Enquire Now</a>
@@ -350,7 +591,7 @@
      a way to convert without scrolling back to the header. -->
 <div class="sticky-cta" aria-hidden="true">
   <div class="sticky-cta-text">
-    <strong>Free consultation</strong>
+    <strong>Book a consultation</strong>
     <span>Speak to a doctor today</span>
   </div>
   <a class="nature-button sticky-cta-button" href="#enquire" data-open-enquiry tabindex="-1">Enquire</a>
@@ -407,10 +648,10 @@
             <label for="f-programme">Programme of interest</label>
             <select id="f-programme" name="programme">
               <option value="">Not sure yet</option>
+              <option>Ayurveda</option>
+              <option>Osteopathy</option>
               <option>Panchakarma</option>
-              <option>Ayurveda Therapies</option>
-              <option>Eye Care</option>
-              <option>Stress &amp; sleep</option>
+              <option>Relaxation Therapies</option>
             </select>
           </div>
 

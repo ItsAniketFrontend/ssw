@@ -42,8 +42,17 @@ Values come from the supplied `styles/design-tokens.css`.
 
 ## Lead capture
 
-Eleven CTAs feed one modal: hero primary, three per-therapy card links, a post-cards
-band, a journey CTA, a post-testimonials band, nav, footer, and a mobile sticky bar.
+Thirteen CTAs feed one modal: hero primary, four per-service card links, a post-cards
+band, a journey CTA, a post-testimonials band, an FAQ CTA, nav, footer, and a mobile
+sticky bar.
+
+Page order: hero → intro (Ayurveda) → four services → journey → testimonials → trust →
+FAQ → stay/enquire → footer.
+
+The FAQ uses native `<details name="faq">` for an exclusive accordion (with a JS fallback
+for older engines) and ships `FAQPage` JSON-LD. **The JSON-LD is generated from the FAQ
+markup and must be regenerated whenever the questions change**, or the structured data
+will drift out of sync with the page.
 
 The modal is a real `aria-modal` dialog — focus moves to the first field, is trapped
 while open, and returns to the trigger on close. Escape and overlay clicks dismiss.
@@ -66,7 +75,11 @@ Two conversion details:
    required disclosure before publishing.
 4. **Testimonials are placeholder copy.** Replace with real, permissioned guest quotes —
    fabricated reviews are a legal risk in most markets.
-5. Collecting names, emails and phone numbers brings privacy-policy and consent-record
+5. **Trust-section figures are placeholders.** The stat counts (25,000+ guests, 30+ years,
+   40+ practitioners, 12+ countries) and the three accreditation marks are invented
+   stand-ins. Replace with verified figures and real certification logos, or remove the
+   block — unsubstantiated credentials carry the same legal exposure as fake reviews.
+6. Collecting names, emails and phone numbers brings privacy-policy and consent-record
    obligations. Add a linked privacy policy before going live.
 
 ## Accessibility

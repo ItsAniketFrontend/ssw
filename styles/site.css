@@ -377,8 +377,17 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: clamp(1.25rem, 2.2vw, 2rem);
+}
+
+/* Bold lead-in line above each service description */
+.card-tagline {
+  margin-bottom: .55rem;
+  color: var(--color-forest);
+  font-size: .92rem;
+  font-weight: 600;
+  line-height: 1.45;
 }
 
 .treatment-card {
@@ -390,6 +399,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate
    an organic but controlled rhythm (layout-spec §4). */
 .treatment-card:nth-child(2) { border-radius: 28px 72px 28px 28px; }
 .treatment-card:nth-child(3) { border-radius: 28px 28px 72px 28px; }
+.treatment-card:nth-child(4) { border-radius: 72px 28px 28px 28px; }
 
 .treatment-card:hover {
   transform: translateY(-6px);
@@ -707,6 +717,202 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate
   top: 2rem;
   right: -4rem;
   transform: rotate(24deg) scaleX(-1);
+}
+
+/* ================= TRUST ================= */
+
+.trust {
+  position: relative;
+  padding-top: var(--space-section);
+}
+
+.trust-head {
+  margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
+  text-align: center;
+}
+.trust-head .leaf-divider { margin: 0 auto 1.4rem; }
+
+.trust-intro {
+  max-width: 60ch;
+  margin: 1.1rem auto 0;
+  color: rgb(47 52 41 / .82);
+  line-height: 1.75;
+}
+
+.trust-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(1rem, 2vw, 1.75rem);
+  padding: clamp(1.75rem, 3vw, 2.5rem) clamp(1rem, 2vw, 2rem);
+  border: 1px solid rgb(180 154 101 / .45);
+  border-radius: 18px 40px 18px 40px;
+  background: rgb(244 235 221 / .55);
+}
+
+.trust-stats li {
+  display: grid;
+  gap: .35rem;
+  justify-items: center;
+  text-align: center;
+}
+.trust-stats li + li {
+  border-left: 1px solid rgb(96 71 53 / .16);
+}
+
+.trust-num {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-forest);
+}
+
+.trust-label {
+  font-size: .84rem;
+  letter-spacing: .01em;
+  color: rgb(47 52 41 / .72);
+}
+
+.trust-marks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.25rem, 3vw, 3rem);
+  align-items: center;
+  justify-content: center;
+  margin-top: clamp(2rem, 3.5vw, 3rem);
+}
+
+.trust-mark {
+  display: flex;
+  gap: .7rem;
+  align-items: center;
+  color: var(--color-moss);
+  font-size: .88rem;
+  font-weight: 500;
+}
+.trust-mark svg {
+  width: 34px;
+  height: 34px;
+  flex: none;
+  color: var(--color-eucalyptus);
+  opacity: .8;
+}
+
+/* ================= FAQ ================= */
+
+.faq {
+  position: relative;
+  padding-top: var(--space-section);
+}
+
+.faq-inner {
+  display: grid;
+  grid-template-columns: 38fr 62fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+}
+
+.faq-head .leaf-divider {
+  width: 170px;
+  margin: 0 0 1.3rem;
+}
+
+.faq-intro {
+  max-width: 34ch;
+  margin: 1.2rem 0 0;
+  color: rgb(47 52 41 / .82);
+  line-height: 1.75;
+}
+
+.faq-cta { margin-top: 1.9rem; }
+
+.faq-list {
+  display: grid;
+  gap: .85rem;
+}
+
+.faq-item {
+  overflow: hidden;
+  border: 1px solid rgb(96 71 53 / .18);
+  border-radius: 16px 28px 16px 28px;
+  background: rgb(248 241 231 / .72);
+  transition: border-color .3s ease, box-shadow .3s ease, background-color .3s ease;
+}
+.faq-item[open] {
+  border-color: rgb(180 154 101 / .6);
+  background: rgb(248 241 231 / .95);
+  box-shadow: var(--shadow-soft);
+}
+.faq-item:hover { border-color: rgb(180 154 101 / .5); }
+
+.faq-item summary {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.15rem 1.4rem;
+  cursor: pointer;
+  list-style: none;
+}
+/* Hide the native disclosure triangle in both engines */
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::marker { content: ''; }
+
+.faq-q {
+  font-family: var(--font-display);
+  font-size: clamp(1.12rem, 1.5vw, 1.35rem);
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  color: var(--color-forest);
+}
+
+/* Plus/minus built from two rules so it can rotate into a minus */
+.faq-icon {
+  position: relative;
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border: 1px solid rgb(111 127 97 / .45);
+  border-radius: 50%;
+}
+.faq-icon::before,
+.faq-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 1.5px;
+  background: var(--color-moss);
+  transform: translate(-50%, -50%);
+  transition: transform .3s ease, opacity .3s ease;
+}
+.faq-icon::after { transform: translate(-50%, -50%) rotate(90deg); }
+.faq-item[open] .faq-icon::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 0;
+}
+.faq-item[open] .faq-icon {
+  border-color: var(--color-clay);
+  background: rgb(184 111 78 / .1);
+}
+
+.faq-a {
+  padding: 0 1.4rem 1.3rem;
+}
+.faq-a p {
+  max-width: 62ch;
+  font-size: .93rem;
+  line-height: 1.75;
+  color: rgb(47 52 41 / .82);
+}
+
+.sprig--faq {
+  bottom: -2rem;
+  left: -4.5rem;
+  width: clamp(150px, 14vw, 210px);
+  transform: rotate(-10deg);
 }
 
 /* ================= STAY & CTA ================= */
@@ -1119,6 +1325,16 @@ body.modal-open { overflow: hidden; }
     grid-column: 1 / -1;
     border-radius: 28px 28px 28px 72px;
   }
+
+  .faq-inner { grid-template-columns: 1fr; }
+  .faq-head h2 br { display: none; }
+  .faq-intro { max-width: 60ch; }
+
+  /* Four services drop to a 2x2 grid before stacking */
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .trust-stats { grid-template-columns: repeat(2, 1fr); gap: 1.75rem 1rem; }
+  .trust-stats li:nth-child(odd) { border-left: 0; }
 }
 
 /* =========================================================
@@ -1190,7 +1406,8 @@ body.modal-open { overflow: hidden; }
   .card-grid { grid-template-columns: 1fr; }
   .treatment-card,
   .treatment-card:nth-child(2),
-  .treatment-card:nth-child(3) { border-radius: 28px 28px 28px 56px; }
+  .treatment-card:nth-child(3),
+  .treatment-card:nth-child(4) { border-radius: 28px 28px 28px 56px; }
   .treatment-card img { aspect-ratio: 4 / 3; }
   .card-body p { max-width: none; }
 
@@ -1218,6 +1435,18 @@ body.modal-open { overflow: hidden; }
   .testimonial:nth-child(2),
   .testimonial:nth-child(3) { border-radius: 28px 28px 28px 56px; }
   .sprig--testimonials { display: none; }
+
+  .trust-stats {
+    grid-template-columns: 1fr 1fr;
+    border-radius: 18px 32px 18px 32px;
+  }
+  .trust-marks { gap: 1rem; }
+  .trust-mark { font-size: .82rem; }
+
+  .faq-cta { width: 100%; justify-content: center; }
+  .faq-item summary { gap: .9rem; padding: 1rem 1.1rem; }
+  .faq-a { padding: 0 1.1rem 1.1rem; }
+  .sprig--faq { display: none; }
 
   /* Full-height sheet on small screens so long forms stay reachable */
   .modal { padding: 0; place-items: end stretch; }

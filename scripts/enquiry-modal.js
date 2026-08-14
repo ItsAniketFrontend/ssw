@@ -213,6 +213,26 @@
     if (btn) btn.focus();
   });
 
+  /* ---------- FAQ accordion fallback ----------
+     Modern browsers make <details name="faq"> mutually exclusive natively.
+     Older ones ignore the attribute, so close siblings manually there. */
+  (function () {
+    var items = document.querySelectorAll('.faq-item[name], .faq-item');
+    if (!items.length) return;
+
+    var supportsName = 'name' in document.createElement('details');
+    if (supportsName) return;
+
+    Array.prototype.forEach.call(items, function (item) {
+      item.addEventListener('toggle', function () {
+        if (!item.open) return;
+        Array.prototype.forEach.call(items, function (other) {
+          if (other !== item) other.open = false;
+        });
+      });
+    });
+  })();
+
   /* ---------- mobile sticky CTA ---------- */
 
   var sticky = document.querySelector('.sticky-cta');
