@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sri Sri Wellbeing — Return to Your Natural Balance</title>
+<meta name="description" content="Personalised Ayurveda, yoga and restorative therapies in serene natural surroundings. Bengaluru, Karnataka.">
+<link rel="icon" href="logo/logo-extracted-transparent.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Responsive clip shapes, traced from elements/*.svg and normalised to
+     objectBoundingBox units so they scale with their container. -->
+<svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Hero wave: crest high on the left, sweeping down to the right,
+         matching the approved prototype's lower edge. -->
+    <clipPath id="heroWave" clipPathUnits="objectBoundingBox">
+      <path d="M0,0 H1 V0.9080 C0.8600,0.9530 0.7000,0.9750 0.5200,0.9420 C0.3400,0.9090 0.1700,0.8480 0,0.8080 Z"/>
+    </clipPath>
+    <!-- consultation-arch-mask.svg (1200x800) -> /1200 x, /800 y -->
+    <clipPath id="journeyArch" clipPathUnits="objectBoundingBox">
+      <path d="M0,1 V0.4375 C0,0.1475 0.2142,0 0.5,0 S1,0.1475 1,0.4375 V1 Z"/>
+    </clipPath>
+  </defs>
+</svg>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#" aria-label="Sri Sri Wellbeing — home">
+      <img src="logo/logo-extracted-transparent.png" alt="Sri Sri Wellbeing" width="668" height="264">
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#relax">Relax</a></li>
+        <li><a href="#heal">Heal</a></li>
+        <li><a href="#stay">Stay</a></li>
+        <li><a href="#story">Our Story</a></li>
+      </ul>
+      <a class="nature-button nav-cta" href="#enquire" data-open-enquiry>Enquire Now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="relax">
+    <picture class="hero-media">
+      <source srcset="images/webp/hero-retreat.webp" type="image/webp">
+      <img class="hero-image" src="images/png/hero-retreat.png" alt="Ayurvedic retreat pavilion set among palms and tropical greenery at sunrise" fetchpriority="high">
+    </picture>
+    <div class="hero-scrim" aria-hidden="true"></div>
+
+    <!-- Thin cream arc tracing just above the wave crest, as in the prototype -->
+    <svg class="hero-wave-line" viewBox="0 0 1600 820" preserveAspectRatio="none" aria-hidden="true">
+      <!-- Offset ~18px above the clip edge so it reads as a traced highlight -->
+      <path d="M0,644 C272,676 544,758 832,772 C1120,786 1392,764 1600,722"
+            fill="none" stroke="#F4EBDD" stroke-width="2" opacity=".55"/>
+    </svg>
+
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Return to Your<br>Natural Balance</h1>
+        <p>Personalised Ayurveda, yoga and restorative therapies in serene natural surroundings.</p>
+        <div class="hero-actions">
+          <a class="nature-button hero-button hero-button--primary" href="#enquire" data-open-enquiry>
+            Book a Free Consultation
+            <svg class="btn-leaf" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M7 25c8-5 12-11 17-20c2 9-2 17-10 20M12 20c-2-5-1-10 2-14c3 5 3 9 1 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="nature-button hero-button hero-button--ghost" href="#heal">
+            Explore Wellness Programs
+          </a>
+        </div>
+        <p class="hero-reassure">Free 15-minute call with an Ayurvedic doctor · No obligation</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INTRO ================= -->
+  <section class="intro" id="heal">
+    <svg class="botanical-accent sprig sprig--intro-left" viewBox="0 0 240 320" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M43 294C83 231 96 164 115 35"/><path d="M95 184C70 178 52 164 38 143C66 139 88 149 101 167"/><path d="M104 145C129 134 148 114 156 90C131 92 112 105 108 128"/><path d="M83 222C59 220 37 209 20 188C49 184 73 194 89 210"/><path d="M112 103C134 91 149 72 154 51C132 53 116 65 111 85"/><path d="M69 255C48 254 31 246 16 231C39 226 59 233 75 245"/><path d="M116 65C128 55 136 42 138 26C121 30 112 41 112 55"/></g></svg>
+
+    <div class="container">
+      <svg class="leaf-divider" viewBox="0 0 360 44" fill="none" aria-hidden="true">
+        <path d="M0 22h132M228 22h132" stroke="#B86F4E" stroke-width="1.5"/>
+        <g stroke="#6F7F61" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M180 35c-1-13 1-23 8-32"/>
+          <path d="M184 19c-10-1-16-6-19-13c10-1 17 3 20 10"/>
+          <path d="M186 14c8-2 14-7 17-13c-9 0-15 4-18 10"/>
+          <path d="M180 28c-8-1-14-5-17-11c9-1 15 3 18 8"/>
+        </g>
+      </svg>
+
+      <h2 class="intro-title">A Holistic Path to Wellbeing</h2>
+
+      <svg class="seed-rule" viewBox="0 0 190 120" fill="none" aria-hidden="true"><g fill="#B49A65" opacity=".8"><ellipse cx="45" cy="65" rx="8" ry="18" transform="rotate(-34 45 65)"/><ellipse cx="82" cy="35" rx="7" ry="16" transform="rotate(16 82 35)"/><ellipse cx="116" cy="69" rx="8" ry="18" transform="rotate(42 116 69)"/><ellipse cx="150" cy="42" rx="6" ry="14" transform="rotate(-12 150 42)"/></g></svg>
+
+      <p class="intro-text">At Sri Sri Wellbeing, we blend ancient wisdom with personalised care to support your body, mind and spirit in a serene natural environment.</p>
+    </div>
+  </section>
+
+  <!-- ================= TREATMENT CARDS ================= -->
+  <section class="treatments">
+    <div class="container">
+      <ul class="card-grid">
+
+        <li class="nature-card treatment-card">
+          <picture>
+            <source srcset="images/webp/treatment-panchakarma.webp" type="image/webp">
+            <img src="images/png/treatment-panchakarma.png" alt="Warm herbal oil poured on a guest's forehead during a shirodhara treatment" loading="lazy" decoding="async">
+          </picture>
+          <div class="card-body">
+            <h3>Panchakarma</h3>
+            <span class="card-rule" aria-hidden="true"></span>
+            <p>Deep detoxification and cleansing therapies.</p>
+            <a class="card-link" href="#enquire" data-open-enquiry data-programme="Panchakarma">Enquire about Panchakarma<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <svg class="card-motif" viewBox="0 0 240 320" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M43 294C83 231 96 164 115 35"/><path d="M95 184C70 178 52 164 38 143C66 139 88 149 101 167"/><path d="M104 145C129 134 148 114 156 90C131 92 112 105 108 128"/><path d="M83 222C59 220 37 209 20 188C49 184 73 194 89 210"/></g></svg>
+          </div>
+        </li>
+
+        <li class="nature-card treatment-card">
+          <picture>
+            <source srcset="images/webp/treatment-ayurveda-therapies.webp" type="image/webp">
+            <img src="images/png/treatment-ayurveda-therapies.png" alt="Herbal poultice bundles, brass bowls and a lit candle arranged for an Ayurvedic therapy" loading="lazy" decoding="async">
+          </picture>
+          <div class="card-body">
+            <h3>Ayurveda Therapies</h3>
+            <span class="card-rule" aria-hidden="true"></span>
+            <p>Rejuvenating massages and specialised therapies.</p>
+            <a class="card-link" href="#enquire" data-open-enquiry data-programme="Ayurveda Therapies">Enquire about Ayurveda Therapies<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <svg class="card-motif" viewBox="0 0 240 320" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M43 294C83 231 96 164 115 35"/><path d="M95 184C70 178 52 164 38 143C66 139 88 149 101 167"/><path d="M104 145C129 134 148 114 156 90C131 92 112 105 108 128"/><path d="M112 103C134 91 149 72 154 51C132 53 116 65 111 85"/></g></svg>
+          </div>
+        </li>
+
+        <li class="nature-card treatment-card">
+          <picture>
+            <source srcset="images/webp/treatment-eye-care.webp" type="image/webp">
+            <img src="images/png/treatment-eye-care.png" alt="Brass bowl of water holding a white blossom on a wooden table in a garden" loading="lazy" decoding="async">
+          </picture>
+          <div class="card-body">
+            <h3>Eye Care</h3>
+            <span class="card-rule" aria-hidden="true"></span>
+            <p>Traditional therapies for healthy eyes and clear vision.</p>
+            <a class="card-link" href="#enquire" data-open-enquiry data-programme="Eye Care">Enquire about Eye Care<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <svg class="card-motif card-motif--ripple" viewBox="0 0 320 180" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="5"><ellipse cx="160" cy="105" rx="126" ry="44"/><ellipse cx="160" cy="105" rx="88" ry="30"/><ellipse cx="160" cy="105" rx="48" ry="16"/><path d="M160 70c-13-15-13-26 0-43c13 17 13 28 0 43Z"/></g></svg>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- Inline prompt: catches intent right after the therapies are read -->
+      <div class="inline-cta">
+        <p class="inline-cta-text">Not sure which therapy is right for you?</p>
+        <a class="nature-button inline-cta-button" href="#enquire" data-open-enquiry>
+          Speak to an Ayurvedic Doctor
+          <svg class="btn-leaf" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M7 25c8-5 12-11 17-20c2 9-2 17-10 20M12 20c-2-5-1-10 2-14c3 5 3 9 1 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PERSONALISED JOURNEY ================= -->
+  <section class="journey" id="story">
+    <svg class="botanical-accent sprig sprig--journey-left" viewBox="0 0 240 320" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M43 294C83 231 96 164 115 35"/><path d="M95 184C70 178 52 164 38 143C66 139 88 149 101 167"/><path d="M104 145C129 134 148 114 156 90C131 92 112 105 108 128"/><path d="M83 222C59 220 37 209 20 188C49 184 73 194 89 210"/><path d="M112 103C134 91 149 72 154 51C132 53 116 65 111 85"/><path d="M69 255C48 254 31 246 16 231C39 226 59 233 75 245"/><path d="M116 65C128 55 136 42 138 26C121 30 112 41 112 55"/></g></svg>
+
+    <div class="container journey-inner">
+      <div class="journey-copy">
+        <h2>A Personalised<br>Wellness Journey</h2>
+        <span class="heading-rule" aria-hidden="true"></span>
+
+        <ol class="steps">
+          <li>
+            <span class="step-num" aria-hidden="true">01</span>
+            <div class="step-text">
+              <h3>Understand</h3>
+              <p>Receive a thorough assessment and personalised plan.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">02</span>
+            <div class="step-text">
+              <h3>Restore</h3>
+              <p>Undergo therapies and practices to restore balance.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">03</span>
+            <div class="step-text">
+              <h3>Sustain</h3>
+              <p>Adopt daily rituals and guidance for lasting wellbeing.</p>
+            </div>
+          </li>
+        </ol>
+
+        <a class="nature-button journey-cta" href="#enquire" data-open-enquiry>
+          Start With Step One
+          <svg class="btn-leaf" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M7 25c8-5 12-11 17-20c2 9-2 17-10 20M12 20c-2-5-1-10 2-14c3 5 3 9 1 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <figure class="journey-figure">
+        <svg class="botanical-accent leaf-shadow" viewBox="0 0 240 320" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M43 294C83 231 96 164 115 35"/><path d="M95 184C70 178 52 164 38 143C66 139 88 149 101 167"/><path d="M104 145C129 134 148 114 156 90C131 92 112 105 108 128"/><path d="M83 222C59 220 37 209 20 188C49 184 73 194 89 210"/><path d="M112 103C134 91 149 72 154 51C132 53 116 65 111 85"/></g></svg>
+        <picture>
+          <source srcset="images/webp/consultation-journey.webp" type="image/webp">
+          <img class="arch-image" src="images/png/consultation-journey.png" alt="An Ayurvedic doctor in a white coat consulting with a guest at a wooden table beside a garden window" decoding="async">
+        </picture>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="testimonials" aria-labelledby="testimonials-title">
+    <svg class="botanical-accent sprig sprig--testimonials" viewBox="0 0 240 320" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M43 294C83 231 96 164 115 35"/><path d="M95 184C70 178 52 164 38 143C66 139 88 149 101 167"/><path d="M104 145C129 134 148 114 156 90C131 92 112 105 108 128"/><path d="M83 222C59 220 37 209 20 188C49 184 73 194 89 210"/><path d="M112 103C134 91 149 72 154 51C132 53 116 65 111 85"/></g></svg>
+
+    <div class="container">
+      <div class="testimonials-head">
+        <svg class="leaf-divider" viewBox="0 0 360 44" fill="none" aria-hidden="true">
+          <path d="M0 22h132M228 22h132" stroke="#B86F4E" stroke-width="1.5"/>
+          <g stroke="#6F7F61" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M180 35c-1-13 1-23 8-32"/>
+            <path d="M184 19c-10-1-16-6-19-13c10-1 17 3 20 10"/>
+            <path d="M186 14c8-2 14-7 17-13c-9 0-15 4-18 10"/>
+            <path d="M180 28c-8-1-14-5-17-11c9-1 15 3 18 8"/>
+          </g>
+        </svg>
+        <h2 id="testimonials-title">Stories of Renewal</h2>
+        <p class="testimonials-intro">Guests who came seeking rest, and left with a rhythm they could keep.</p>
+      </div>
+
+      <ul class="testimonial-grid">
+        <li class="nature-card testimonial">
+          <svg class="quote-mark" viewBox="0 0 48 36" aria-hidden="true"><path d="M20 36V20C20 9 27 2 38 0l2 6c-6 2-9 6-9 11h7v19H20Zm-20 0V20C0 9 7 2 18 0l2 6c-6 2-9 6-9 11h7v19H0Z" fill="currentColor"/></svg>
+          <blockquote>
+            <p>I arrived exhausted and sceptical. The doctors listened for an hour before suggesting anything — by the second week my sleep had come back on its own.</p>
+          </blockquote>
+          <figcaption class="testimonial-person">
+            <span class="person-avatar" aria-hidden="true">AR</span>
+            <span class="person-meta">
+              <span class="person-name">Ananya Rao</span>
+              <span class="person-detail">14-day Panchakarma</span>
+            </span>
+          </figcaption>
+        </li>
+
+        <li class="nature-card testimonial">
+          <svg class="quote-mark" viewBox="0 0 48 36" aria-hidden="true"><path d="M20 36V20C20 9 27 2 38 0l2 6c-6 2-9 6-9 11h7v19H20Zm-20 0V20C0 9 7 2 18 0l2 6c-6 2-9 6-9 11h7v19H0Z" fill="currentColor"/></svg>
+          <blockquote>
+            <p>What stayed with me was not the therapies but the daily routine they built around me. Six months on, I still follow most of it at home in Pune.</p>
+          </blockquote>
+          <figcaption class="testimonial-person">
+            <span class="person-avatar" aria-hidden="true">DM</span>
+            <span class="person-meta">
+              <span class="person-name">Dhruv Mehta</span>
+              <span class="person-detail">Stress &amp; sleep programme</span>
+            </span>
+          </figcaption>
+        </li>
+
+        <li class="nature-card testimonial">
+          <svg class="quote-mark" viewBox="0 0 48 36" aria-hidden="true"><path d="M20 36V20C20 9 27 2 38 0l2 6c-6 2-9 6-9 11h7v19H20Zm-20 0V20C0 9 7 2 18 0l2 6c-6 2-9 6-9 11h7v19H0Z" fill="currentColor"/></svg>
+          <blockquote>
+            <p>The eye therapies helped more than I expected after years at a screen. Quiet mornings, birds, no rush anywhere — that was half the medicine.</p>
+          </blockquote>
+          <figcaption class="testimonial-person">
+            <span class="person-avatar" aria-hidden="true">SK</span>
+            <span class="person-meta">
+              <span class="person-name">Sara Kulkarni</span>
+              <span class="person-detail">Netra Tarpana course</span>
+            </span>
+          </figcaption>
+        </li>
+      </ul>
+
+      <div class="inline-cta inline-cta--centred">
+        <p class="inline-cta-text">Your story could start this season.</p>
+        <a class="nature-button inline-cta-button" href="#enquire" data-open-enquiry>
+          Plan My Stay
+          <svg class="btn-leaf" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M7 25c8-5 12-11 17-20c2 9-2 17-10 20M12 20c-2-5-1-10 2-14c3 5 3 9 1 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STAY & ENQUIRE ================= -->
+  <section class="stay" id="stay">
+    <svg class="botanical-accent ripple-accent ripple-accent--stay" viewBox="0 0 320 180" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="2"><ellipse cx="160" cy="105" rx="126" ry="44"/><ellipse cx="160" cy="105" rx="88" ry="30"/><ellipse cx="160" cy="105" rx="48" ry="16"/></g></svg>
+
+    <div class="container stay-inner">
+      <figure class="stay-figure">
+        <picture>
+          <source srcset="images/webp/nature-stay-cottage.webp" type="image/webp">
+          <img src="images/png/nature-stay-cottage.png" alt="A tiled-roof garden cottage surrounded by tall trees and a stone pathway" decoding="async">
+        </picture>
+      </figure>
+
+      <div class="cta-panel" id="enquire">
+        <svg class="cta-sprig" viewBox="0 0 240 320" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M43 294C83 231 96 164 115 35"/><path d="M95 184C70 178 52 164 38 143C66 139 88 149 101 167"/><path d="M104 145C129 134 148 114 156 90C131 92 112 105 108 128"/><path d="M112 103C134 91 149 72 154 51C132 53 116 65 111 85"/><path d="M116 65C128 55 136 42 138 26C121 30 112 41 112 55"/></g></svg>
+        <svg class="cta-ripples" viewBox="0 0 320 180" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="2"><ellipse cx="160" cy="105" rx="126" ry="44"/><ellipse cx="160" cy="105" rx="88" ry="30"/><ellipse cx="160" cy="105" rx="48" ry="16"/><path d="M160 70c-13-15-13-26 0-43c13 17 13 28 0 43Z"/></g></svg>
+        <svg class="cta-seeds" viewBox="0 0 190 120" fill="none" aria-hidden="true"><g fill="currentColor"><ellipse cx="45" cy="65" rx="8" ry="18" transform="rotate(-34 45 65)"/><ellipse cx="82" cy="35" rx="7" ry="16" transform="rotate(16 82 35)"/><ellipse cx="116" cy="69" rx="8" ry="18" transform="rotate(42 116 69)"/><ellipse cx="150" cy="42" rx="6" ry="14" transform="rotate(-12 150 42)"/></g></svg>
+
+        <div class="cta-content">
+          <h2>Begin Your<br>Wellbeing Journey</h2>
+          <span class="heading-rule heading-rule--light" aria-hidden="true"></span>
+          <p>Personalised care awaits you in the lap of nature. Enquire today to begin.</p>
+          <a class="nature-button cta-button" href="mailto:hello@srisriwellbeing.com" data-open-enquiry>
+            Enquire Now
+            <svg class="btn-leaf" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M7 25c8-5 12-11 17-20c2 9-2 17-10 20M12 20c-2-5-1-10 2-14c3 5 3 9 1 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a class="logo footer-logo" href="#" aria-label="Sri Sri Wellbeing — home">
+      <img src="logo/logo-extracted-transparent.png" alt="Sri Sri Wellbeing" width="668" height="264" loading="lazy">
+    </a>
+    <p class="footer-location">Bengaluru, Karnataka</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <ul>
+        <li><a href="#relax">Relax</a></li>
+        <li><a href="#heal">Heal</a></li>
+        <li><a href="#stay">Stay</a></li>
+        <li><a href="#story">Our Story</a></li>
+      </ul>
+    </nav>
+    <a class="nature-button footer-cta" href="#enquire" data-open-enquiry>Enquire Now</a>
+  </div>
+</footer>
+
+<!-- ================= MOBILE STICKY CTA =================
+     Appears once the hero has scrolled past, so a phone user always has
+     a way to convert without scrolling back to the header. -->
+<div class="sticky-cta" aria-hidden="true">
+  <div class="sticky-cta-text">
+    <strong>Free consultation</strong>
+    <span>Speak to a doctor today</span>
+  </div>
+  <a class="nature-button sticky-cta-button" href="#enquire" data-open-enquiry tabindex="-1">Enquire</a>
+</div>
+
+<!-- ================= ENQUIRY MODAL ================= -->
+<div class="modal" id="enquiry-modal" hidden>
+  <div class="modal-overlay" data-close></div>
+
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc">
+    <button class="modal-close" type="button" data-close aria-label="Close enquiry form">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+
+    <svg class="modal-sprig" viewBox="0 0 240 320" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M43 294C83 231 96 164 115 35"/><path d="M95 184C70 178 52 164 38 143C66 139 88 149 101 167"/><path d="M104 145C129 134 148 114 156 90C131 92 112 105 108 128"/><path d="M112 103C134 91 149 72 154 51C132 53 116 65 111 85"/></g></svg>
+
+    <div class="modal-body">
+      <svg class="leaf-divider modal-divider" viewBox="0 0 360 44" fill="none" aria-hidden="true">
+        <path d="M0 22h132M228 22h132" stroke="#B86F4E" stroke-width="1.5"/>
+        <g stroke="#6F7F61" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M180 35c-1-13 1-23 8-32"/>
+          <path d="M184 19c-10-1-16-6-19-13c10-1 17 3 20 10"/>
+          <path d="M186 14c8-2 14-7 17-13c-9 0-15 4-18 10"/>
+          <path d="M180 28c-8-1-14-5-17-11c9-1 15 3 18 8"/>
+        </g>
+      </svg>
+
+      <h2 id="modal-title">Plan Your Stay</h2>
+      <p id="modal-desc" class="modal-lede">Share a few details and our wellness team will call you back within one working day.</p>
+
+      <form class="enquiry-form" novalidate>
+        <div class="field">
+          <label for="f-name">Full name <span aria-hidden="true">*</span></label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+          <p class="field-error" data-error-for="f-name" hidden>Please enter your name.</p>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="f-email">Email <span aria-hidden="true">*</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+            <p class="field-error" data-error-for="f-email" hidden>Please enter a valid email address.</p>
+          </div>
+
+          <div class="field">
+            <label for="f-phone">Phone <span aria-hidden="true">*</span></label>
+            <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+            <p class="field-error" data-error-for="f-phone" hidden>Please enter a valid phone number.</p>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="f-programme">Programme of interest</label>
+            <select id="f-programme" name="programme">
+              <option value="">Not sure yet</option>
+              <option>Panchakarma</option>
+              <option>Ayurveda Therapies</option>
+              <option>Eye Care</option>
+              <option>Stress &amp; sleep</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="f-date">Preferred start date</label>
+            <input id="f-date" name="date" type="date">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-message">What would you like help with?</label>
+          <textarea id="f-message" name="message" rows="3"></textarea>
+        </div>
+
+        <label class="consent">
+          <input id="f-consent" name="consent" type="checkbox" required>
+          <span>I agree to be contacted about my enquiry. <span aria-hidden="true">*</span></span>
+        </label>
+        <p class="field-error" data-error-for="f-consent" hidden>Please confirm so we can contact you.</p>
+
+        <button class="nature-button form-submit" type="submit">
+          Request a Callback
+          <svg class="btn-leaf" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M7 25c8-5 12-11 17-20c2 9-2 17-10 20M12 20c-2-5-1-10 2-14c3 5 3 9 1 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <p class="form-note">We reply personally. No newsletters, no sharing your details.</p>
+      </form>
+
+      <div class="form-success" hidden>
+        <svg class="success-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="1.5" opacity=".35"/>
+          <path d="M20 33l8.5 8.5L44 24" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Thank you — we have your details.</h3>
+        <p>A member of our wellness team will call you within one working day to plan your stay.</p>
+        <button class="nature-button" type="button" data-close>Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="scripts/animations.js"></script>
+
+<script src="scripts/enquiry-modal.js"></script>
+
+<script>
+  (function () {
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('primary-nav');
+    if (!toggle || !nav) return;
+
+    toggle.addEventListener('click', function () {
+      var open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+      document.body.classList.toggle('nav-open', !open);
+    });
+
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName !== 'A') return;
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open menu');
+      document.body.classList.remove('nav-open');
+    });
+  })();
+</script>
+
+</body>
+</html>

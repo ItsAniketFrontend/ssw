@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap');
+
+:root {
+  --color-ivory: #f4ebdd;
+  --color-paper: #f8f1e7;
+  --color-sage: #9aa486;
+  --color-eucalyptus: #6f7f61;
+  --color-moss: #44563b;
+  --color-forest: #273b29;
+  --color-bark: #604735;
+  --color-clay: #b86f4e;
+  --color-brass: #b49a65;
+  --color-ink: #2f3429;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Manrope', Arial, sans-serif;
+  --page-max: 1180px;
+  --space-section: clamp(5rem, 9vw, 9rem);
+  --radius-card: 28px 28px 28px 72px;
+  --radius-soft: 24px;
+  --shadow-soft: 0 18px 55px rgb(39 59 41 / 0.10);
+}
+
+body {
+  margin: 0;
+  color: var(--color-ink);
+  background: var(--color-paper) url('../images/webp/paper-texture.webp') repeat;
+  background-size: 520px 520px;
+  font-family: var(--font-body);
+  line-height: 1.65;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  color: var(--color-forest);
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+}
+
+h1 { font-size: clamp(3.6rem, 7vw, 7rem); }
+h2 { font-size: clamp(2.6rem, 4.5vw, 4.8rem); }
+h3 { font-size: clamp(1.75rem, 2.4vw, 2.6rem); }
+
+.container {
+  width: min(calc(100% - 2rem), var(--page-max));
+  margin-inline: auto;
+}
+
+.nature-card {
+  overflow: hidden;
+  border: 1px solid rgb(96 71 53 / 0.18);
+  border-radius: var(--radius-card);
+  background: rgb(248 241 231 / 0.72);
+  box-shadow: var(--shadow-soft);
+}
+
+.nature-button {
+  display: inline-flex;
+  gap: 0.65rem;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 1.35rem;
+  border: 1px solid rgb(180 154 101 / 0.75);
+  border-radius: 8px 18px 8px 18px;
+  color: var(--color-paper);
+  background: var(--color-moss);
+  font: 600 0.9rem/1 var(--font-body);
+}
+
+.hero-image {
+  width: 100%;
+  min-height: min(75vh, 760px);
+  object-fit: cover;
+  object-position: center;
+  clip-path: ellipse(92% 78% at 50% 20%);
+}
+
+.arch-image {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  clip-path: path('M0 100%V44% C0 14% 22% 0 50% 0s50% 14% 50% 44v56z');
+}
+
+.botanical-accent {
+  color: var(--color-eucalyptus);
+  opacity: 0.14;
+  pointer-events: none;
+}
+
+@media (max-width: 720px) {
+  :root { --space-section: 4rem; }
+  .hero-image { min-height: 620px; object-position: 44% center; }
+}
+
