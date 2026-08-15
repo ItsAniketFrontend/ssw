@@ -46,7 +46,8 @@ Thirteen CTAs feed one modal: hero primary, four per-service card links, a post-
 band, a journey CTA, a post-testimonials band, an FAQ CTA, nav, footer, and a mobile
 sticky bar.
 
-Page order: hero → intro (Ayurveda) → four services → journey → testimonials → trust →
+Page order: hero → intro (Ayurveda) → four services (Osteopathy, Panchakarma,
+Relaxation Therapies, Nadi Pariksha) → journey → testimonials → trust →
 FAQ → stay/enquire → footer.
 
 The FAQ uses native `<details name="faq">` for an exclusive accordion (with a JS fallback
@@ -73,6 +74,9 @@ Two conversion details:
    the prototype. Replace it with the official brand vector.
 3. **Imagery is AI-generated.** Per the original asset pack, confirm brand approval and any
    required disclosure before publishing.
+   **Nadi Pariksha has no dedicated photograph** — it currently reuses
+   `consultation-journey` as a stand-in. Replace `images/{png,webp}/treatment-nadi-pariksha.*`
+   with a real pulse-reading image (generation prompt is in `docs/image-prompts.md`).
 4. **Testimonials are placeholder copy.** Replace with real, permissioned guest quotes —
    fabricated reviews are a legal risk in most markets.
 5. **Trust-section figures are placeholders.** The stat counts (25,000+ guests, 30+ years,

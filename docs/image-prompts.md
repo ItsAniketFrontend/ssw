@@ -26,3 +26,24 @@ Wide lifestyle photograph of a female Indian Ayurveda doctor consulting with an 
 
 Wide architectural hospitality photograph of a traditional South Indian wellness cottage with clay-tile roof and veranda, tropical medicinal garden and stepping-stone path, golden late-afternoon light; authentic, serene; no people, text or UI.
 
+
+## treatment-nadi-pariksha
+
+Needed for the fourth service card. Square-ish framing (rendered at 4:3),
+must sit alongside the existing therapy photographs.
+
+Prompt:
+
+> A serene Ayurvedic consultation room in soft natural morning light. An
+> experienced female Ayurvedic practitioner in a simple white coat gently
+> reads the pulse at the wrist of a seated guest, three fingertips resting
+> on the inner wrist. Both hands are the clear focus of the frame, sharp and
+> centred. Warm teak table, a small brass bowl and a folded cloth nearby.
+> Blurred green garden foliage through a wooden window behind. Calm, unhurried,
+> documentary feel. Muted earth palette — moss green, warm brass, cream.
+> Shallow depth of field, soft diffused light, no harsh shadows.
+> Photorealistic, editorial wellness photography. No text, no logos,
+> no jewellery on the wrists.
+
+Export to `images/png/treatment-nadi-pariksha.png` and
+`images/webp/treatment-nadi-pariksha.webp`.
