@@ -74,9 +74,9 @@ Two conversion details:
    the prototype. Replace it with the official brand vector.
 3. **Imagery is AI-generated.** Per the original asset pack, confirm brand approval and any
    required disclosure before publishing.
-   **Nadi Pariksha has no dedicated photograph** — it currently reuses
-   `consultation-journey` as a stand-in. Replace `images/{png,webp}/treatment-nadi-pariksha.*`
-   with a real pulse-reading image (generation prompt is in `docs/image-prompts.md`).
+   This now includes `treatment-nadi-pariksha.*`, generated from the prompt in
+   `docs/image-prompts.md`. Raw generator exports live in `source-images/` (gitignored);
+   the processed masters in `images/` are what the page loads.
 4. **Testimonials are placeholder copy.** Replace with real, permissioned guest quotes —
    fabricated reviews are a legal risk in most markets.
 5. **Trust-section figures are placeholders.** The stat counts (25,000+ guests, 30+ years,

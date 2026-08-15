@@ -13,3 +13,6 @@ _*.html
 
 # Dependencies (GSAP is vendored in vendor/ intentionally)
 node_modules/
+
+# Raw generator exports (the processed versions live in images/)
+source-images/
